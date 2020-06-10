@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* ----------- login container and input fields ------ */
+
+input[type=text],input[type=password],input[type=email]{
+    width: 100%;
+    padding: 12px;
+    padding-left:50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color:#fff;
+   
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+
+.labelforinput {
+    padding: 14px 12px 12px 12px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.logincontainer {
+    border-radius: 5px;
+    background-color:#f6f6f6;
+    padding: 30px;
+    
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* --------- end of login module -----------*/
+
+
+.iconcolor input:focus + i {          /* -------- fa fa-icon color change when input field is clicked (on focus) ---- */
+    color: #16a085;
+
+}
+
+
+
+#user
+{
+     position:relative;
+    top:-32px;
+    left:10px;   
+    font-size:24px;
+
+}
+#semail{
+     position:relative;
+    top:-32px;
+    left:10px;   
+    font-size:24px;
+}
+#pass{
+     position:relative;
+    top:-32px;
+    left:10px;   
+    font-size:24px;
+}
+#repass{
+     position:relative;
+    top:-32px;
+    left:10px;   
+    font-size:24px; 
+}
+#lemail{
+      position:absolute;
+    top:98px;
+    left:52px; 
+    font-size:20px;
+}
+#lpass{
+       position:absolute;
+    top:155px;
+    left:52px;    
+    font-size:24px;    
+}
+
+
+
+.a{
+    font-size:15px;         /* label font size */
+}
+
+#last_line_of_login_module{
+ position:relative;
+ top:45px;
+   
+}
+
+#forgot{
+    display:none;
+}
+#signup{
+    display:none;
+}
+
+#logo{
+    position:relative;
+    top:-50px;
+    left:25px;
+    filter:brightness(0) invert(1); 
+    margin-left: -10px;
+}
+
+
+
+
+
+
+/*---------- loader -------------*/
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4a484b;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    oveflow: hidden !important;
+}
+
+.loaded {
+    width: 293px;
+    height: 233px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+.dams_loader{
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+
+
+/* ================== signup Button =============== */
+.signupbutton {
+  
+   color: #0dad8d;
+    border: 2px solid #0dad8d;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: center;
+    display:inline-block;
+    overflow:hidden;
+    background-color:transparent;
+    text-transform: uppercase;
+}
+
+.signupbutton:hover { 
+    background-color: #0dad8d;
+    color:#fff;
+} 
+
+/* =============== Login button ============= */
+.loginbutton {
+  
+   color: #fff;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: center;
+    display:inline-block;
+    overflow:hidden;
+    background-color:transparent;
+    text-transform: uppercase;
+}
+
+.loginbutton:hover { 
+    background-color: #696969;
+    color:#fff;
+} 
